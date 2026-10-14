@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inside the Nykaa Business Story | Brand &amp; Impact{% endblock %}
+
+{% block content %}
+
+<!-- Header Banner -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-badge section-badge-gold">Enterprise Case Study</span>
+    <h1>Inside the Nykaa Business Story</h1>
+    <p class="page-header-subtitle">
+      How an inventory-led e-commerce venture transformed into India's premier omnichannel beauty, personal care, and fashion destination.
+    </p>
+    <ul class="breadcrumb-list">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><span>&bull;</span></li>
+      <li>About Nykaa</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Section A: What is Nykaa? -->
+<section class="section-padding bg-white" aria-label="What is Nykaa">
+  <div class="container">
+    <div class="hero-grid" style="align-items: center;">
+      <div>
+        <span class="section-badge">Corporate Overview</span>
+        <h2>What is Nykaa?</h2>
+        <p>
+          Founded in April 2012 by Falguni Sanjay Nayar, <strong>Nykaa</strong> (operated by FSN E-Commerce Ventures Limited) is India's preeminent consumer technology platform specializing in beauty, personal care, wellness, and fashion.
+        </p>
+        <p>
+          The company’s name stems from the Sanskrit word <em>Nayaka</em>, symbolizing an actress or one in the spotlight—embodying its mission to celebrate individuality, confidence, and personal style for consumers of all identities.
+        </p>
+        <p>
+          Headquartered in Mumbai, Nykaa pioneered the transition of Indian beauty from fragmented local counters into a modern, trusted digital ecosystem supported by state-of-the-art warehouses, authentic brand certifications, and an extensive network of physical stores nationwide.
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="https://www.nykaa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Visit the Official Nykaa Store &nearr;
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 3px solid var(--color-blush-200);">
+          <img src="{% static 'images/nykaa-store.jpg' %}" alt="Inside a luxury beauty store experience" width="600" height="420" style="width: 100%; height: auto; display: block;">
+        </div>
+        <p class="text-muted" style="margin-top: 0.75rem; text-align: center; font-size: 0.85rem;">
+          The experiential ambiance of modern luxury beauty retail (Photo via Unsplash).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section B: Business Model -->
+<section class="section-padding bg-blush" aria-label="Nykaa Business Model Architecture">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge section-badge-gold">Strategic Framework</span>
+      <h2>The Engine: Nykaa's Business Model</h2>
+      <p>Analyzing the operational pillars that deliver sustainable growth, customer loyalty, and unit-level profitability.</p>
+    </div>
+
+    <div class="card-grid-3">
+      
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128230;</div>
+        <h3>The Inventory-Led Advantage</h3>
+        <p>
+          Unlike pure uncurated marketplaces where third-party sellers list wares freely, Nykaa purchases products directly from brand manufacturers and holds them in certified fulfillment hubs. This eliminates counterfeit risks and ensures pristine quality.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128101;</div>
+        <h3>Direct Global Brand Alliances</h3>
+        <p>
+          Nykaa serves as the trusted Indian gateway for prestigious global beauty houses—including Huda Beauty, Charlotte Tilbury, The Ordinary, and Sol de Janeiro—providing localized compliance, logistics, and dedicated brand boutiques.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128132;</div>
+        <h3>High-Margin Private Labels</h3>
+        <p>
+          To complement third-party brands, Nykaa established proprietary labels like <em>Nykaa Cosmetics</em>, <em>Nykaa Naturals</em>, and the Katrina Kaif joint-venture <em>Kay Beauty</em>, generating superior gross margins while fulfilling specific market gaps.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128241;</div>
+        <h3>Omnichannel Flywheel</h3>
+        <p>
+          Physical stores (Nykaa Luxe and Nykaa On Trend) act as sensory discovery centers where shoppers trial shades and receive skin consultations, while the mobile application facilitates seamless reorders, loyalty rewards, and nation-wide home delivery.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128214;</div>
+        <h3>Content-Led Commerce</h3>
+        <p>
+          Nykaa transformed beauty advice into purchase intent. Through interactive YouTube masterclasses, beauty blogs, Nykaa Network community forums, and influencer collaborations, consumer education became the primary acquisition engine.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128666;</div>
+        <h3>Specialized Cold-Chain Logistics</h3>
+        <p>
+          Cosmetics and skincare degrade under extreme temperature fluctuations. Nykaa built specialized, temperature-monitored regional warehouses across Mumbai, Delhi, Bengaluru, and Kolkata to preserve product shelf life.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section C: Products and Categories Showcase -->
+<section class="section-padding bg-white" aria-label="Product Categories Showcase">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Curated Offerings</span>
+      <h2>Core Product &amp; Lifestyle Categories</h2>
+      <p>Exploring the diverse lifestyle segments curated across Nykaa’s online portals and retail boutiques.</p>
+    </div>
+
+    <div class="card-grid-3">
+      
+      <!-- Skincare -->
+      <div class="category-card">
+        <img src="{% static 'images/skincare.jpg' %}" alt="Skincare serums and organic creams" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Skincare &amp; Derm-Cosmetics</h4>
+          <p>Targeted serums, sunscreens, moisturizers, and active dermatological treatments for all Indian skin types.</p>
+        </div>
+      </div>
+
+      <!-- Makeup -->
+      <div class="category-card">
+        <img src="{% static 'images/makeup.jpg' %}" alt="Vibrant luxury makeup and eyeshadow palette" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Cosmetics &amp; Color Makeup</h4>
+          <p>Foundations, inclusive lipsticks, eye makeup, and highlighters tailored for warm and diverse undertones.</p>
+        </div>
+      </div>
+
+      <!-- Haircare -->
+      <div class="category-card">
+        <img src="{% static 'images/haircare.jpg' %}" alt="Haircare and salon treatment products" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Haircare &amp; Salon Styling</h4>
+          <p>Scalp care, nourishing oils, sulfate-free shampoos, and professional salon styling appliances.</p>
+        </div>
+      </div>
+
+      <!-- Fragrance -->
+      <div class="category-card">
+        <img src="{% static 'images/fragrance.jpg' %}" alt="Luxury perfume bottle" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Prestige Fragrances &amp; Scents</h4>
+          <p>Artisanal perfumes, eau de parfums, body mists, and fine oriental oudh from international perfumeries.</p>
+        </div>
+      </div>
+
+      <!-- Personal Care & Wellness -->
+      <div class="category-card">
+        <img src="{% static 'images/nykaa-beauty-products.jpg' %}" alt="Personal care and bath essentials" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Personal Care &amp; Wellness</h4>
+          <p>Herbal ayurvedic care, nutritional supplements, bath essentials, and clean green beauty ranges.</p>
+        </div>
+      </div>
+
+      <!-- Fashion & Lifestyle -->
+      <div class="category-card">
+        <img src="{% static 'images/fashion.jpg' %}" alt="High fashion and designer lifestyle apparel" class="category-card-img" width="400" height="530">
+        <div class="category-card-overlay">
+          <h4>Nykaa Fashion &amp; Lifestyle</h4>
+          <p>Contemporary ethnic wear, curated designer apparel, footwear, and accessories celebrating Indian aesthetics.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section D & E: Why Customers Use Nykaa & Retail Transformation -->
+<section class="section-padding bg-blush" aria-label="Consumer Value & Industry Transformation">
+  <div class="container">
+    <div class="hero-grid" style="align-items: center;">
+      <div>
+        <span class="section-badge section-badge-gold">Customer Centricity</span>
+        <h2>Why Millions Choose Nykaa</h2>
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 1.25rem;">
+            <strong class="text-burgundy">&check; 100% Guaranteed Authenticity:</strong> Every single item is shipped straight from the authorized manufacturer or brand partner, protected with tamper-proof security seals.
+          </li>
+          <li style="margin-bottom: 1.25rem;">
+            <strong class="text-burgundy">&check; Unrivaled Brand Selection:</strong> Seamless access to over 3,000+ domestic and international prestige brands in one unified digital shopping bag.
+          </li>
+          <li style="margin-bottom: 1.25rem;">
+            <strong class="text-burgundy">&check; Intelligent Personalization:</strong> Virtual shade-finder engines, AI skin diagnostic tools, and community-verified swatch photos eliminate online purchasing uncertainty.
+          </li>
+          <li style="margin-bottom: 1.25rem;">
+            <strong class="text-burgundy">&check; The Experiential Store Network:</strong> In-store beauty advisors offer complimentary shade matching, skincare consultations, and instant product trials.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="section-badge">Market Transformation</span>
+        <h2>How Nykaa Changed Indian Beauty</h2>
+        <p>
+          Before Nykaa, purchasing authentic luxury beauty in non-metropolitan India was virtually impossible. Nykaa effectively dismantled geographic boundaries: today, a substantial portion of Nykaa’s orders originate outside the top eight metropolitan cities.
+        </p>
+        <p>
+          Moreover, Nykaa popularized modern beauty education in India through its annual <strong>Nykaa Femina Beauty Awards</strong>, spotlighting breakthrough formulations and celebrating consumer favorites across diverse Indian skin types.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section F: Verified Corporate Milestones Timeline -->
+<section class="section-padding bg-white" aria-label="Corporate Growth Milestones">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Growth Journey</span>
+      <h2>Key Business Growth Milestones</h2>
+      <p>A verified retrospective of Nykaa’s strategic expansion from 2012 to the present day.</p>
+    </div>
+
+    <div style="max-width: 900px; margin: 0 auto;">
+      <table class="facts-table" aria-label="Corporate Growth Milestones Table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 25%;">Year</th>
+            <th scope="col">Strategic Milestone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">April 2012</th>
+            <td>Incorporation and digital launch of Nykaa as an online beauty and personal care e-commerce platform.</td>
+          </tr>
+          <tr>
+            <th scope="row">2014</th>
+            <td>Unveiling of Nykaa’s first physical retail store at Terminal 3, Indira Gandhi International Airport, New Delhi.</td>
+          </tr>
+          <tr>
+            <th scope="row">2015</th>
+            <td>Inception of <em>Nykaa Cosmetics</em> private label, expanding product margins and bespoke shade development.</td>
+          </tr>
+          <tr>
+            <th scope="row">2018</th>
+            <td>Launch of <strong>Nykaa Man</strong> (specialized men's grooming) and <strong>Nykaa Fashion</strong> (curated style platform).</td>
+          </tr>
+          <tr>
+            <th scope="row">2019</th>
+            <td>Launch of <em>Kay Beauty</em>, a landmark joint-venture cosmetic line with Bollywood icon Katrina Kaif.</td>
+          </tr>
+          <tr>
+            <th scope="row">November 2021</th>
+            <td>Blockbuster IPO listing on the Bombay Stock Exchange (BSE) and National Stock Exchange (NSE) with massive oversubscription.</td>
+          </tr>
+          <tr>
+            <th scope="row">2022 &ndash; Present</th>
+            <td>Strategic international partnership with the Apparel Group to scale omnichannel beauty retail across the GCC region.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="text-align: center; margin-top: 3.5rem;">
+      <a href="https://www.nykaa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Explore Products on Official Nykaa Store &nearr;
+      </a>
+      <a href="{% url 'gallery' %}" class="btn btn-secondary" style="margin-left: 1rem;">
+        View Nykaa Moments Gallery &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

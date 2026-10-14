@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Falguni Nayar — The Visionary Behind Nykaa{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section" aria-label="Hero Introduction">
+  <div class="container hero-grid">
+    <div class="hero-text-content">
+      <div class="hero-eyebrow">
+        <span>&diams;</span> Entrepreneurial Leadership &bull; Founder &amp; CEO, Nykaa
+      </div>
+      <h1 class="hero-title">She Didn't Just Build a Brand. She Built an Empire.</h1>
+      <p class="hero-designation">Falguni Sanjay Nayar — Pioneer of India’s Omnichannel Beauty Revolution</p>
+      <p class="hero-lead">
+        At the age of 49, after a celebrated two-decade career leading Kotak Mahindra’s investment banking division, Falguni Nayar stepped into the uncharted waters of e-commerce. Guided by an unwavering belief in product authenticity and consumer empowerment, she established <strong>Nykaa</strong> in 2012, transforming it into India’s most influential beauty and lifestyle destination and becoming India's wealthiest self-made female billionaire upon its historic 2021 public listing.
+      </p>
+
+      <div class="hero-actions">
+        <a href="{% url 'success_story' %}" class="btn btn-primary">
+          Explore Her Journey &rarr;
+        </a>
+        <a href="{% url 'achievements' %}" class="btn btn-secondary">
+          Discover Her Achievements
+        </a>
+      </div>
+
+      <div class="hero-stats-row">
+        <div class="stat-item">
+          <h4>2012</h4>
+          <p>Founded Nykaa at age 49 with an inventory-led authenticity model.</p>
+        </div>
+        <div class="stat-item">
+          <h4>100%</h4>
+          <p>Commitment to genuine, brand-authorized beauty &amp; wellness products.</p>
+        </div>
+        <div class="stat-item">
+          <h4>Nov 2021</h4>
+          <p>Landmark IPO listing on BSE &amp; NSE as India's premier woman-led unicorn.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image & Framing -->
+    <div class="hero-image-wrapper">
+      <div class="hero-image-frame">
+        <img src="{% static 'images/falguni-nayar.jpg' %}" alt="Falguni Nayar, founder of Nykaa" class="hero-portrait-img" width="440" height="520">
+        <div class="hero-image-badge">
+          <h5>Falguni Sanjay Nayar</h5>
+          <p>Founder, Managing Director &amp; CEO &bull; Nykaa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section A: Who is Falguni Nayar? -->
+<section class="section-padding bg-white" aria-label="Who is Falguni Nayar">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Biographical Profile</span>
+      <h2>Who is Falguni Nayar?</h2>
+      <p>A trailblazing Indian businesswoman who redefined modern retail leadership and shattered barriers in commerce.</p>
+    </div>
+
+    <div class="card-grid-3">
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127974;</div>
+        <h3>The Investment Banker</h3>
+        <p>
+          Armed with an MBA from IIM Ahmedabad, Falguni spent 19 formative years at Kotak Mahindra Group, rising to Managing Director of Kotak Mahindra Capital Company and advising top Indian conglomerates on public listings and mergers.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128640;</div>
+        <h3>The Fearless Founder</h3>
+        <p>
+          In 2012, choosing entrepreneurial risk over boardroom comfort, she launched Nykaa (derived from the Sanskrit word <em>Nayaka</em>, meaning one in the spotlight), filling a vital void for genuine beauty retail in India.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127942;</div>
+        <h3>The Self-Made Icon</h3>
+        <p>
+          By taking Nykaa public in November 2021, she demonstrated that sustainable profitability, ethical sourcing, and customer-first curation can build a globally respected Indian enterprise led entirely by a woman founder.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section B: Quick Facts -->
+<section class="section-padding bg-blush" aria-label="Verified Quick Facts">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge section-badge-gold">Verified Chronology</span>
+      <h2>Quick Facts at a Glance</h2>
+      <p>Key biographical milestones and verified corporate facts regarding Falguni Nayar and Nykaa.</p>
+    </div>
+
+    <div style="max-width: 900px; margin: 0 auto;">
+      <table class="facts-table" aria-label="Biographical Quick Facts Table">
+        <tbody>
+          <tr>
+            <th scope="row">Full Name</th>
+            <td><strong>Falguni Sanjay Nayar</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Date &amp; Place of Birth</th>
+            <td>19 February 1963 &bull; Mumbai, Maharashtra, India</td>
+          </tr>
+          <tr>
+            <th scope="row">Undergraduate Education</th>
+            <td>Bachelor of Commerce (B.Com), Sydenham College of Commerce and Economics, Mumbai</td>
+          </tr>
+          <tr>
+            <th scope="row">Postgraduate Education</th>
+            <td>Post Graduate Diploma in Management (MBA Finance), Indian Institute of Management Ahmedabad (IIM-A, 1985 Batch)</td>
+          </tr>
+          <tr>
+            <th scope="row">Enterprise Founded</th>
+            <td><strong>Nykaa</strong> (Parent: FSN E-Commerce Ventures Limited)</td>
+          </tr>
+          <tr>
+            <th scope="row">Founding Year</th>
+            <td>April 2012 (Launched commercially from Mumbai)</td>
+          </tr>
+          <tr>
+            <th scope="row">Prior Career Role</th>
+            <td>Managing Director &amp; Head of Investment Banking, Kotak Mahindra Capital Company (1993&ndash;2012)</td>
+          </tr>
+          <tr>
+            <th scope="row">Public Market Milestone</th>
+            <td>Initial Public Offering (IPO) in November 2021 on BSE &amp; NSE; First profitable Indian tech unicorn led by a female founder to list</td>
+          </tr>
+          <tr>
+            <th scope="row">Global Recognition</th>
+            <td>EY World Entrepreneur of the Year 2022 (Monte Carlo); Forbes India Leadership Award; Time100 Next List</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Section C: Her Vision -->
+<section class="section-padding bg-white" aria-label="Her Vision and Market Opportunity">
+  <div class="container">
+    <div class="hero-grid" style="align-items: center;">
+      <div>
+        <span class="section-badge">Market Analysis</span>
+        <h2>The Vision that Revolutionized Indian Retail</h2>
+        <p>
+          Before 2012, India’s beauty and personal care landscape was fragmented, unorganized, and fraught with counterfeit products. Most consumers purchased beauty products from local neighborhood counters with restricted shelf space and minimal product advice.
+        </p>
+        <p>
+          Falguni Nayar identified a structural opportunity: Indian consumers were aspirational, increasingly digitally literate, and hungry for genuine luxury and drugstore brands. Rather than operating as an uncurated open marketplace, she insisted on an <strong>inventory-led model</strong> where Nykaa purchased directly from authorized brand manufacturers, guaranteeing 100% authenticity.
+        </p>
+        <p>
+          Her vision united commerce with education: Nykaa introduced beauty tutorials, expert advice columns, shade-finder tools, and authentic customer reviews, empowering millions of women and men across Tier 1, 2, and 3 cities to discover beauty with confidence.
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="{% url 'about_nykaa' %}" class="btn btn-primary">Discover the Business Model &rarr;</a>
+        </div>
+      </div>
+      <div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 2px solid var(--color-blush-200);">
+          <img src="{% static 'images/nykaa-brand.jpg' %}" alt="Nykaa premium cosmetics and skincare collection" width="600" height="450" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section D: Nykaa at a Glance -->
+<section class="section-padding bg-blush" aria-label="Nykaa at a Glance">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Retail Ecosystem</span>
+      <h2>Nykaa at a Glance</h2>
+      <p>Exploring the multi-dimensional pillars that power India’s leading lifestyle powerhouse.</p>
+    </div>
+
+    <div class="card-grid-3">
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#10024;</div>
+        <h3>Beauty &amp; Personal Care</h3>
+        <p>
+          The core engine of Nykaa, offering tens of thousands of skincare, cosmetics, haircare, and wellness products from premier domestic and global brands like Est&eacute;e Lauder, Clinique, MAC, and Nykaa Cosmetics.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128087;</div>
+        <h3>Nykaa Fashion &amp; Lifestyle</h3>
+        <p>
+          Launched to curate wardrobe essentials, designer wear, and contemporary apparel with an emphasis on discovery, trend forecasts, and quality craftsmanship for style-conscious consumers.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127969;</div>
+        <h3>Omnichannel Physical Stores</h3>
+        <p>
+          A seamless blend of offline and online retail through <strong>Nykaa Luxe</strong> (prestige international beauty) and <strong>Nykaa On Trend</strong> (trend-focused curation) across major Indian metros.
+        </p>
+      </article>
+    </div>
+
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="{% url 'about_nykaa' %}" class="btn btn-secondary">Explore All Product Categories &amp; Retail Strategy &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section E: Inspirational Editorial Statement -->
+<section class="container" aria-label="Inspirational Statement">
+  <div class="quote-section">
+    <div class="quote-inner">
+      <div class="quote-icon">&ldquo;</div>
+      <blockquote class="quote-text">
+        Entrepreneurship is not about age or timing; it is about recognizing an authentic customer need and building the operational discipline to serve it with uncompromising excellence.
+      </blockquote>
+      <div class="quote-attribution">
+        Editorial Reflection &bull; The Spirit of Falguni Nayar’s Leadership
+      </div>
+      <span class="quote-disclaimer">
+        (Note: Written by the academic project authors summarizing the core philosophy of Falguni Nayar's journey)
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- Section F: Call to Action Grid -->
+<section class="section-padding bg-white" aria-label="Explore Further Sections">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Deep Dive</span>
+      <h2>Explore Her Story in Detail</h2>
+      <p>Navigate through the educational chapters documenting her career, family background, and achievements.</p>
+    </div>
+
+    <div class="card-grid-4">
+      <div class="info-card text-center">
+        <div class="card-icon-wrapper" style="margin: 0 auto 1.25rem auto;">&#128218;</div>
+        <h4>Success Story</h4>
+        <p>Her path from Sydenham and IIMA to Kotak and Nykaa's founding.</p>
+        <div style="margin-top: 1.25rem;">
+          <a href="{% url 'success_story' %}" class="btn btn-secondary btn-sm">Read Timeline &rarr;</a>
+        </div>
+      </div>
+
+      <div class="info-card text-center">
+        <div class="card-icon-wrapper" style="margin: 0 auto 1.25rem auto;">&#127881;</div>
+        <h4>Achievements</h4>
+        <p>Historic awards, Forbes rankings, and the celebrated 2021 IPO.</p>
+        <div style="margin-top: 1.25rem;">
+          <a href="{% url 'achievements' %}" class="btn btn-secondary btn-sm">View Honors &rarr;</a>
+        </div>
+      </div>
+
+      <div class="info-card text-center">
+        <div class="card-icon-wrapper" style="margin: 0 auto 1.25rem auto;">&#128106;</div>
+        <h4>Personal Life</h4>
+        <p>Her academic pedigree, family values, and leadership principles.</p>
+        <div style="margin-top: 1.25rem;">
+          <a href="{% url 'personal_life' %}" class="btn btn-secondary btn-sm">Meet the Person &rarr;</a>
+        </div>
+      </div>
+
+      <div class="info-card text-center">
+        <div class="card-icon-wrapper" style="margin: 0 auto 1.25rem auto;">&#127912;</div>
+        <h4>Media Gallery</h4>
+        <p>Curated photo archives, retail store moments, and public events.</p>
+        <div style="margin-top: 1.25rem;">
+          <a href="{% url 'gallery' %}" class="btn btn-secondary btn-sm">Open Gallery &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

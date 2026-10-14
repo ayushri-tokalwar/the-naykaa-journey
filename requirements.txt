@@ -1,0 +1,7 @@
+# Requirements for The Nykaa Journey - Falguni Nayar Educational Portfolio
+# Second-Year B.Tech Computer Science and Engineering Project
+
+Django>=5.0.0,<6.0.0
+asgiref>=3.8.1
+sqlparse>=0.5.0
+tzdata>=2025.1

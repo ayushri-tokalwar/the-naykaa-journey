@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Moments from the Nykaa Journey | Curated Gallery{% endblock %}
+
+{% block content %}
+
+<!-- Header Banner -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-badge section-badge-gold">Curated Visual Archive</span>
+    <h1>Moments from the Nykaa Journey</h1>
+    <p class="page-header-subtitle">
+      A photographic exhibition tracing the corporate milestones, brand ambassadors, physical retail stores, and leadership events of Nykaa.
+    </p>
+    <ul class="breadcrumb-list">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><span>&bull;</span></li>
+      <li>Gallery</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Gallery Grid Section -->
+<section class="section-padding bg-white" aria-label="Curated Photographic Gallery">
+  <div class="container">
+    
+    <div class="section-header">
+      <span class="section-badge">Visual Chronicle</span>
+      <h2>Photographic Highlights &amp; Milestones</h2>
+      <p>All images are verified from public archives, creative commons repositories, and authorized publications with full attribution.</p>
+    </div>
+
+    <div class="gallery-grid">
+      
+      <!-- Card 1: Falguni Nayar Portrait -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/falguni-nayar.jpg' %}" alt="Falguni Nayar, founder of Nykaa" class="gallery-img" width="400" height="250" style="object-position: center top;">
+          <span class="gallery-category-badge">Leadership</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Falguni Sanjay Nayar &ndash; Founder &amp; CEO</h4>
+          <p>The visionary leader behind Nykaa, celebrated for transitioning from a veteran career in investment banking to building India's premier consumer lifestyle empire.</p>
+          <div class="gallery-meta">
+            <span>Official Executive Portrait</span>
+            <span class="text-gold">&bull; Leadership Archive</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Bombay Stock Exchange IPO -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/bse-listing.jpg' %}" alt="Bombay Stock Exchange Phiroze Jeejeebhoy Towers in Mumbai" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Public Listing</span>
+        </div>
+        <div class="gallery-info">
+          <h4>BSE Stock Market Listing &ndash; November 2021</h4>
+          <p>The historic Bombay Stock Exchange (BSE) where FSN E-Commerce Ventures debuted with an oversubscribed IPO, marking India's first woman-led unicorn listing.</p>
+          <div class="gallery-meta">
+            <span>Location: Dalal Street, Mumbai</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Bombay_Stock_Exchange.jpg" target="_blank" rel="noopener noreferrer">Wikimedia CC &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: IIM Ahmedabad Louis Kahn Plaza -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/iim-ahmedabad.jpg' %}" alt="IIM Ahmedabad Louis Kahn Plaza heritage campus" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Academic Roots</span>
+        </div>
+        <div class="gallery-info">
+          <h4>IIM Ahmedabad &ndash; Alma Mater (1985 Batch)</h4>
+          <p>The iconic Louis Kahn Plaza at IIM Ahmedabad where Falguni completed her Post Graduate Diploma in Management (MBA Finance), shaping her disciplined approach to unit economics.</p>
+          <div class="gallery-meta">
+            <span>Location: Ahmedabad, Gujarat</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Indian_Institute_of_Management_Ahmedabad,_Louis_Kahn_Plaza.jpg" target="_blank" rel="noopener noreferrer">Wikimedia CC &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4: Janhvi Kapoor at Nykaa Launch -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/gallery/janhvi-nykaa-launch.jpg' %}" alt="Janhvi Kapoor at Nykaa Brand Launch event" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Brand Ambassador</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Janhvi Kapoor &ndash; Nykaa Brand Ambassador Launch</h4>
+          <p>Actress Janhvi Kapoor at an official Nykaa launch ceremony, highlighting Nykaa's collaborations with youth cultural icons to champion dynamic Indian beauty narratives.</p>
+          <div class="gallery-meta">
+            <span>Event: Mumbai Launch Event</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Janhvi_Kapoor_snapped_at_Nykaa_launch_event_(03).jpg" target="_blank" rel="noopener noreferrer">Wikimedia CC &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5: Aishwarya Rai at Nykaa Femina Awards -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/gallery/nykaa-awards-aishwarya.jpg' %}" alt="Aishwarya Rai at Nykaa Femina Beauty Awards" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Annual Awards</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Nykaa Femina Beauty Awards Red Carpet</h4>
+          <p>Aishwarya Rai Bachchan gracing the Nykaa Femina Beauty Awards, India's foremost annual celebration recognizing excellence in cosmetics, skincare, and fragrance innovation.</p>
+          <div class="gallery-meta">
+            <span>Event: Annual Beauty Gala</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Aishwarya_Rai_graces_the_4th_edition_of_the_Nykaa_Femina_Beauty_Awards_2018_(01)_(cropped).jpg" target="_blank" rel="noopener noreferrer">Wikimedia CC &nearr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6: Nykaa Experiential Store -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/nykaa-store.jpg' %}" alt="Modern Nykaa Luxe experiential store interior" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Retail Space</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Nykaa Luxe Experiential Retail Boutiques</h4>
+          <p>An inside look at the sophisticated physical retail boutiques that power Nykaa's omnichannel strategy, offering interactive makeup stations and skincare diagnostics.</p>
+          <div class="gallery-meta">
+            <span>Format: Omnichannel Store</span>
+            <span class="text-muted">Unsplash License</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7: Beauty Consultation Counter -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/gallery/beauty-counter.jpg' %}" alt="Beauty advisor consultation counter and luxury fragrance display" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Customer Touchpoint</span>
+        </div>
+        <div class="gallery-info">
+          <h4>In-Store Beauty Consultation Counters</h4>
+          <p>Trained beauty advisors offering personalized foundation shade-matching and skin-health recommendations, turning retail spaces into educational discovery hubs.</p>
+          <div class="gallery-meta">
+            <span>Service: Shade &amp; Skin Matching</span>
+            <span class="text-muted">Unsplash License</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 8: Nykaa Cosmetics Private Label Swatches -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/gallery/lipstick-collection.jpg' %}" alt="Curated lipstick shades and color swatches" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Private Label</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Nykaa Cosmetics &ndash; Formulation &amp; Shades</h4>
+          <p>A vibrant showcase of rich lipstick tones developed by Nykaa's proprietary product development team specifically suited for diverse undertones across the subcontinent.</p>
+          <div class="gallery-meta">
+            <span>Category: Lipsticks &amp; Pigments</span>
+            <span class="text-muted">Unsplash License</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 9: Nykaa Wellness & Aromatherapy -->
+      <article class="gallery-card">
+        <div class="gallery-img-container">
+          <img src="{% static 'images/gallery/wellness-spa.jpg' %}" alt="Holistic wellness, herbal extracts, and skincare oils" class="gallery-img" width="400" height="250">
+          <span class="gallery-category-badge">Wellness</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Nykaa Naturals &amp; Holistic Self-Care</h4>
+          <p>Pure cold-pressed essential oils, Ayurvedic botanicals, and clean personal wellness ranges that meet the growing demand for natural personal care in India.</p>
+          <div class="gallery-meta">
+            <span>Category: Clean &amp; Organic Wellness</span>
+            <span class="text-muted">Unsplash License</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Image Licensing & Attribution Notice -->
+    <div style="background-color: var(--color-blush-50); border: 1px solid var(--color-blush-200); border-radius: var(--radius-lg); padding: 2rem; margin-top: 3.5rem;">
+      <h4 style="color: var(--color-burgundy-900); margin-bottom: 0.5rem;">Image Attribution &amp; Academic Compliance</h4>
+      <p style="font-size: 0.92rem; color: var(--color-gray-600); margin-bottom: 0.5rem;">
+        In strict adherence to academic research ethics and copyright guidelines, all media displayed in this portfolio are sourced from Wikimedia Commons (licensed under Creative Commons CC BY-SA 2.5/3.0/4.0), reputable public domain image libraries (Unsplash Open License), or official investor regulatory disclosures.
+      </p>
+      <p style="font-size: 0.88rem; color: var(--color-gray-500); margin: 0;">
+        Students or evaluators wishing to substitute local photographs from Nykaa's official press kit can place new files directly in the <code>static/images/</code> directory as described in the project documentation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

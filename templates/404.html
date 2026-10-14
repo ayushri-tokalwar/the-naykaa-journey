@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}404 &ndash; Page Not Found | The Nykaa Journey{% endblock %}
+
+{% block content %}
+
+<header class="page-header">
+  <div class="container">
+    <span class="section-badge section-badge-gold">Error 404</span>
+    <h1>Page Not Found</h1>
+    <p class="page-header-subtitle">
+      The beauty destination or biographical resource you requested does not exist or has been relocated.
+    </p>
+  </div>
+</header>
+
+<section class="section-padding bg-white" style="text-align: center;">
+  <div class="container" style="max-width: 650px;">
+    <div style="font-family: var(--font-heading); font-size: 6rem; color: var(--color-burgundy-700); line-height: 1; margin-bottom: 1rem;">
+      404
+    </div>
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Looking for a Story in the Spotlight?</h2>
+    <p style="font-size: 1.05rem; color: var(--color-gray-600); margin-bottom: 2.5rem;">
+      We couldn't locate the specific page you were searching for. Please check the URL for typos, or return to one of our core chapters below.
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="{% url 'home' %}" class="btn btn-primary">Return to Homepage &rarr;</a>
+      <a href="{% url 'success_story' %}" class="btn btn-secondary">Explore Success Story</a>
+      <a href="{% url 'about_nykaa' %}" class="btn btn-secondary">About Nykaa</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

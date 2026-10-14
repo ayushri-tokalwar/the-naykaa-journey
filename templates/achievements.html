@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Achievements That Made History | Falguni Nayar{% endblock %}
+
+{% block content %}
+
+<!-- Header Banner -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-badge section-badge-gold">Honors &amp; Milestones</span>
+    <h1>Achievements That Made History</h1>
+    <p class="page-header-subtitle">
+      A comprehensive record of the awards, corporate distinctions, and historic milestones earned by Falguni Sanjay Nayar.
+    </p>
+    <ul class="breadcrumb-list">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><span>&bull;</span></li>
+      <li>Achievements</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Achievements Gallery Section -->
+<section class="section-padding bg-white" aria-label="Verified Achievements and Awards">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Hall of Distinction</span>
+      <h2>Verified Honours &amp; Recognitions</h2>
+      <p>Documented recognitions evaluated against official corporate archives and reputable national publications.</p>
+    </div>
+
+    <!-- Achievement 1: EY World Entrepreneur of the Year -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <span class="achievement-year">2022</span>
+        <span class="achievement-category">Global Award</span>
+      </div>
+      <div class="achievement-body">
+        <h3>EY World Entrepreneur of the Year (Monte Carlo)</h3>
+        <p>
+          At the global EY World Entrepreneur of the Year summit held in Monaco, Falguni Nayar was named the winner from among 50 finalists representing 41 countries. She became only the third Indian in history—and the <strong>first Indian woman</strong>—to claim this top global entrepreneurship prize in the award's 22-year legacy.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Affirmed Indian consumer-tech innovation on the world stage and established that purposeful, ethically-governed Indian retail businesses can command global respect.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> Ernst &amp; Young Global Press Release, June 2022; Financial Express World Reports.
+        </div>
+      </div>
+    </article>
+
+    <!-- Achievement 2: Landmark Stock Market IPO -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <img src="{% static 'images/bse-listing.jpg' %}" alt="BSE Building" class="achievement-visual-img">
+        <span class="achievement-year">2021</span>
+        <span class="achievement-category">Capital Milestone</span>
+      </div>
+      <div class="achievement-body">
+        <h3>BSE &amp; NSE Initial Public Offering (IPO)</h3>
+        <p>
+          Nykaa's parent company, FSN E-Commerce Ventures Ltd, concluded an IPO that was oversubscribed 81.78 times. At the time of listing on 10 November 2021, the market capitalization eclipsed &dollar;13 billion, marking the first profitable woman-founded tech unicorn in India to ring the public trading bell.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Demonstrated that consumer loyalty and sound fiscal fundamentals triumph over debt-driven expansion, inspiring a new wave of female-led initial public offerings across South Asia.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> Bombay Stock Exchange (BSE Scrip: 543384) Listing Documents &amp; NSE Regulatory Records, Nov 2021.
+        </div>
+      </div>
+    </article>
+
+    <!-- Achievement 3: EY Entrepreneur of the Year India -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <span class="achievement-year">2021</span>
+        <span class="achievement-category">National Honor</span>
+      </div>
+      <div class="achievement-body">
+        <h3>EY Entrepreneur of the Year &ndash; India</h3>
+        <p>
+          Conferred by an eminent jury chaired by top corporate leaders, Falguni was chosen for her boldness in venturing into online beauty at age 49, transforming an unorganized retail sector, and building a trusted digital-first retail destination.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Celebrated her resilience in transforming consumer behavior across Tier 1, 2, and 3 Indian cities through digital beauty literacy.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> EY India Entrepreneur of the Year Official Citations (23rd Edition).
+        </div>
+      </div>
+    </article>
+
+    <!-- Achievement 4: Forbes India Leadership Awards & Asia's Power Businesswomen -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <span class="achievement-year">2019 &ndash; 2022</span>
+        <span class="achievement-category">Corporate Leadership</span>
+      </div>
+      <div class="achievement-body">
+        <h3>Forbes Asia's Power Businesswomen &amp; Forbes India Rich List</h3>
+        <p>
+          Repeatedly featured prominently in <em>Forbes Asia’s Power Businesswomen</em> list and ranking as India's wealthiest self-made female billionaire. In 2019, she was also awarded the <strong>Businessperson of the Year</strong> at the prestigious Forbes India Leadership Awards.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Smashed longstanding glass ceilings in wealth rankings traditionally dominated by male founders and inherited family conglomerates.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> Forbes Asia (November 2020 &amp; 2021 editions) and Forbes India Annual Leadership Awards.
+        </div>
+      </div>
+    </article>
+
+    <!-- Achievement 5: TIME100 Next Recognition -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <span class="achievement-year">2022</span>
+        <span class="achievement-category">Global Influence</span>
+      </div>
+      <div class="achievement-body">
+        <h3>TIME100 Next &ndash; Leaders Shaping the Future</h3>
+        <p>
+          Selected by <em>TIME Magazine</em> for the global <strong>TIME100 Next</strong> list, which honors emerging leaders who are actively shaping the future of business, entertainment, and society. TIME highlighted her ability to disrupt a traditional beauty market through authentic digital storytelling.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Affirmed her cultural and economic influence extending far beyond commerce into societal modernization.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> TIME Magazine TIME100 Next 2022 List, published September 2022.
+        </div>
+      </div>
+    </article>
+
+    <!-- Achievement 6: Economic Times Awards for Corporate Excellence -->
+    <article class="achievement-card">
+      <div class="achievement-visual">
+        <span class="achievement-year">2019</span>
+        <span class="achievement-category">Industry Recognition</span>
+      </div>
+      <div class="achievement-body">
+        <h3>ET Awards &ndash; Businesswoman of the Year</h3>
+        <p>
+          Honored by <em>The Economic Times</em> at the premier Economic Times Awards for Corporate Excellence for building Nykaa into a resilient omnichannel market leader prior to its public market debut.
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Validated her early omnichannel strategy of combining physical experiential counters with deep digital supply chains.
+        </p>
+        <div class="achievement-source-cite">
+          <strong>Source:</strong> The Economic Times Awards for Corporate Excellence 2019 Archives.
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Section: Why Her Journey Matters -->
+<section class="section-padding bg-blush" aria-label="Why Her Journey Matters">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge section-badge-gold">Socio-Economic Impact</span>
+      <h2>Why Her Journey Matters</h2>
+      <p>Analyzing the broader ripple effects of Falguni Nayar's legacy on Indian society, entrepreneurship, and retail.</p>
+    </div>
+
+    <div class="card-grid-3">
+      
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#9878;</div>
+        <h3>Dismantling Gender Stereotypes</h3>
+        <p>
+          In a tech startup landscape historically dominated by young male tech founders, Falguni proved that profound domain experience, commercial empathy, and female leadership are extraordinary competitive advantages.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127775;</div>
+        <h3>Advocating Second-Career Inception</h3>
+        <p>
+          Her story proves that the median age of startup success need not be in one's twenties. Launching Nykaa at 49 encourages seasoned corporate professionals to channel their deep execution expertise into entrepreneurship.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128176;</div>
+        <h3>The Discipline of Unit Economics</h3>
+        <p>
+          Nykaa challenged the prevailing startup ethos of buying market share at infinite loss. Falguni emphasized strong gross margins, disciplined inventory turnover, and cash flow positivity, setting a new benchmark for Indian tech ventures.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127981;</div>
+        <h3>Elevating Homegrown Indian Brands</h3>
+        <p>
+          Nykaa served as a powerful incubator for hundreds of emerging domestic Indian beauty and wellness startups, providing them with digital shelf space, consumer analytics, and nation-wide fulfillment infrastructure.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128105;&zwj;&#128188;</div>
+        <h3>Fostering Women in Corporate Governance</h3>
+        <p>
+          By maintaining significant female representation across Nykaa's board of directors, management team, and beauty advisor workforce, she built an organization that reflects the diversity of the consumers it serves.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127757;</div>
+        <h3>Democratic Access to Quality</h3>
+        <p>
+          Nykaa eradicated geographic disparity in beauty access. A customer residing in a small Tier-3 town now enjoys the exact same authentic access to international skincare and makeup as someone shopping in south Mumbai or New Delhi.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}{{ title|default:"Falguni Nayar — The Visionary Behind Nykaa" }}{% endblock %}</title>
+  
+  <meta name="description" content="{% block meta_description %}Educational biography and business study of Falguni Sanjay Nayar, Founder and CEO of Nykaa, tracing her career from investment banking to building India's premier beauty and lifestyle empire.{% endblock %}">
+  <meta name="keywords" content="Falguni Nayar, Nykaa, FSN E-Commerce, Indian Entrepreneurship, Women in Business, Beauty Retail, B.Tech CSE Project">
+  <meta name="author" content="B.Tech CSE Student">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <!-- Sticky Header & Pure CSS Responsive Navigation (Begins Cleanly at the Top) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="{% url 'home' %}" class="brand-wrapper" title="The Nykaa Journey - Falguni Nayar">
+        <img src="{% static 'images/nykaa-logo.svg' %}" alt="Nykaa Brand Identity" class="brand-logo-img" width="110" height="38">
+        <div class="brand-title-group">
+          <span class="brand-name">Falguni Nayar</span>
+          <span class="brand-subtitle">The Visionary Behind Nykaa</span>
+        </div>
+      </a>
+
+      <!-- CSS Checkbox Toggle for Mobile Navigation (No JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" title="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Nav Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-item">
+          <a href="{% url 'home' %}" class="nav-link {% if active_page == 'home' %}active{% endif %}">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="{% url 'success_story' %}" class="nav-link {% if active_page == 'success_story' %}active{% endif %}">Success Story</a>
+        </div>
+        <div class="nav-item">
+          <a href="{% url 'achievements' %}" class="nav-link {% if active_page == 'achievements' %}active{% endif %}">Achievements</a>
+        </div>
+        <div class="nav-item">
+          <a href="{% url 'personal_life' %}" class="nav-link {% if active_page == 'personal_life' %}active{% endif %}">Personal Life</a>
+        </div>
+        <div class="nav-item">
+          <a href="{% url 'about_nykaa' %}" class="nav-link {% if active_page == 'about_nykaa' %}active{% endif %}">About Nykaa</a>
+        </div>
+        <div class="nav-item">
+          <a href="{% url 'gallery' %}" class="nav-link {% if active_page == 'gallery' %}active{% endif %}">Gallery</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Flash Messages Block -->
+  {% if messages %}
+    <div class="container" style="margin-top: 1.5rem;">
+      {% for message in messages %}
+        <div class="message-alert {% if message.tags == 'error' %}message-error{% else %}message-success{% endif %}" role="alert">
+          <strong>{% if message.tags == 'error' %}Notice:{% else %}Success:{% endif %}</strong>
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Main Page Content Block -->
+  <main id="main-content">
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <!-- Professional Educational Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Website Overview -->
+        <div class="footer-col">
+          <h4>The Nykaa Journey</h4>
+          <p>
+            An educational biography and case study detailing the entrepreneurial triumph of <strong>Falguni Sanjay Nayar</strong>, who stepped away from a prominent investment banking career at age 49 to pioneer India’s leading omnichannel beauty and lifestyle empire.
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <span class="section-badge section-badge-gold">Curated Academic Biography</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Explore Biography</h4>
+          <ul class="footer-links">
+            <li><a href="{% url 'home' %}">Overview &amp; Vision</a></li>
+            <li><a href="{% url 'success_story' %}">Chronological Timeline</a></li>
+            <li><a href="{% url 'achievements' %}">Historic Milestones &amp; Awards</a></li>
+            <li><a href="{% url 'personal_life' %}">Education &amp; Family</a></li>
+            <li><a href="{% url 'about_nykaa' %}">Inside the Business Model</a></li>
+            <li><a href="{% url 'gallery' %}">Photographic Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Corporate & Investor Resources -->
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.nykaa.com/" target="_blank" rel="noopener noreferrer">Nykaa E-Commerce Portal &nearr;</a></li>
+            <li><a href="https://www.nykaa.com/who-are-we" target="_blank" rel="noopener noreferrer">Nykaa Leadership &amp; Board &nearr;</a></li>
+            <li><a href="https://www.bseindia.com/stock-share-price/fsn-e-commerce-ventures-ltd/nykaa/543384/" target="_blank" rel="noopener noreferrer">BSE India Listing (543384) &nearr;</a></li>
+            <li><a href="https://www.iima.ac.in/" target="_blank" rel="noopener noreferrer">IIM Ahmedabad Alumni Archive &nearr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Academic Disclaimer & Attributions -->
+        <div class="footer-col">
+          <h4>Academic Disclaimer</h4>
+          <div class="footer-disclaimer-card">
+            <p>
+              This website is an independent educational study created for a second-year B.Tech Computer Science &amp; Engineering curriculum viva. It is not affiliated with, sponsored by, or endorsed by Nykaa (FSN E-Commerce Ventures Ltd) or Falguni Sanjay Nayar.
+            </p>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--color-gray-400);">
+            Image Credits: Wikimedia Commons (CC BY-SA 4.0), Unsplash Open License, and Official Regulatory Press Releases.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 The Nykaa Journey &bull; Developed with HTML5, CSS3, Python &amp; Django.
+        </div>
+        <div>
+          Designed for B.Tech CSE Web Development &bull; Strict Zero-JavaScript Implementation.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

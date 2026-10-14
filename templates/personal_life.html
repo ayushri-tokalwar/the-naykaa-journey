@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Beyond Business: The Person Behind the Brand | Biography{% endblock %}
+
+{% block content %}
+
+<!-- Header Banner -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-badge section-badge-gold">Personal Biography</span>
+    <h1>Beyond Business: The Person Behind the Brand</h1>
+    <p class="page-header-subtitle">
+      A respectful, factually grounded exploration of Falguni Nayar's education, family heritage, lifestyle, and executive leadership philosophy.
+    </p>
+    <ul class="breadcrumb-list">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><span>&bull;</span></li>
+      <li>Personal Life</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Section A: Educational Background -->
+<section class="section-padding bg-white" aria-label="Educational Journey">
+  <div class="container">
+    <div class="hero-grid" style="align-items: center;">
+      <div>
+        <span class="section-badge">Academic Pedigree</span>
+        <h2>Educational Foundations &amp; Intellectual Rigor</h2>
+        <p>
+          Falguni Nayar’s executive acumen was nurtured within India's finest academic institutions. Born and raised in Mumbai, she pursued her undergraduate degree at the esteemed <strong>Sydenham College of Commerce and Economics</strong>, developing early mastery over commercial law, corporate accounting, and financial management.
+        </p>
+        <p>
+          Her pursuit of managerial excellence brought her to the <strong>Indian Institute of Management Ahmedabad (IIM-A)</strong>, widely regarded as India’s premier business school. Graduating in the 1985 PGDM batch with a specialization in Finance, she was immersed in case-method pedagogy, quantitative modeling, and strategic corporate governance.
+        </p>
+        <p>
+          Her academic journey instilled a disciplined framework for decision-making. Where others viewed e-commerce as purely technological code, Falguni approached it as an operational supply-chain challenge requiring capital efficiency, prudent working-capital cycles, and brand trust.
+        </p>
+      </div>
+
+      <div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 3px solid var(--color-blush-200);">
+          <img src="{% static 'images/iim-ahmedabad.jpg' %}" alt="IIM Ahmedabad campus" width="600" height="400" style="width: 100%; height: auto; display: block;">
+        </div>
+        <p class="text-muted" style="margin-top: 0.75rem; text-align: center; font-size: 0.85rem;">
+          The historic IIM Ahmedabad brick campus where Falguni met her future husband Sanjay Nayar and honed her financial acumen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section B: Family Background & Heritage -->
+<section class="section-padding bg-blush" aria-label="Family and Heritage">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge section-badge-gold">Family Values</span>
+      <h2>Family Background &amp; Public Legacy</h2>
+      <p>Examining the documented family ties and collaborative leadership that anchor the Nayar family in Indian commerce.</p>
+    </div>
+
+    <div class="card-grid-3">
+      
+      <!-- Sanjay Nayar -->
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128100;</div>
+        <h3>Sanjay Nayar</h3>
+        <p class="text-burgundy" style="font-weight: 600; font-size: 0.88rem; margin-bottom: 0.6rem;">Husband &amp; Veteran Financier</p>
+        <p>
+          Falguni met her husband Sanjay Nayar while both were students at IIM Ahmedabad, marrying in 1987. A towering figure in global private equity, Sanjay served as the CEO of Citigroup India and later spearheaded KKR’s private equity practice in India as its Chairman and CEO. He currently chairs Sorin Investments and has served as a supportive sounding board throughout Nykaa's growth.
+        </p>
+      </article>
+
+      <!-- Anchit Nayar -->
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#127970;</div>
+        <h3>Anchit Nayar</h3>
+        <p class="text-burgundy" style="font-weight: 600; font-size: 0.88rem; margin-bottom: 0.6rem;">Son &amp; CEO, Beauty E-Commerce</p>
+        <p>
+          Twin son Anchit graduated from Columbia University in New York and gained extensive experience in investment banking at Morgan Stanley before joining Nykaa. As Chief Executive Officer of Nykaa’s Beauty E-Commerce business, he has steered brand partnerships with global luxury houses, digital consumer experience, and cross-border brand onboarding.
+        </p>
+      </article>
+
+      <!-- Adwaita Nayar -->
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128092;</div>
+        <h3>Adwaita Nayar</h3>
+        <p class="text-burgundy" style="font-weight: 600; font-size: 0.88rem; margin-bottom: 0.6rem;">Daughter &amp; CEO, Nykaa Fashion</p>
+        <p>
+          Twin daughter Adwaita holds a Bachelor’s degree from Yale University and an MBA from Harvard Business School. She was instrumental in Nykaa's early operational launch and currently serves as CEO of Nykaa Fashion and Head of New Businesses, expanding Nykaa’s private label apparel and curated designer portfolios.
+        </p>
+      </article>
+
+    </div>
+
+    <div style="background-color: var(--color-white); border-radius: var(--radius-lg); padding: 2rem; margin-top: 2.5rem; border: 1px solid var(--color-blush-200); box-shadow: var(--shadow-xs);">
+      <h4 style="color: var(--color-burgundy-900); margin-bottom: 0.5rem;">Family Synergy in Modern Corporate Governance</h4>
+      <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--color-gray-600);">
+        Publicly documented corporate records demonstrate how the family members combine institutional financial training with digital native insights. Each individual holds formal executive responsibilities governed by Nykaa’s publicly audited board committees, ensuring that the enterprise operates under transparent, accountable corporate governance standards.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Section C: Personal Life & Lifestyle -->
+<section class="section-padding bg-white" aria-label="Personal Life and Lifestyle">
+  <div class="container">
+    <div class="hero-grid" style="align-items: center;">
+      <div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 3px solid var(--color-blush-200);">
+          <img src="{% static 'images/gallery/wellness-spa.jpg' %}" alt="Calm wellness and balanced lifestyle aesthetic" width="600" height="400" style="width: 100%; height: auto; display: block;">
+        </div>
+        <p class="text-muted" style="margin-top: 0.75rem; text-align: center; font-size: 0.85rem;">
+          Balancing intense enterprise leadership with grounded focus and personal wellness.
+        </p>
+      </div>
+
+      <div>
+        <span class="section-badge">Grounded Reality</span>
+        <h2>Lifestyle &amp; Public Responsibilities</h2>
+        <p>
+          Despite her international prominence and status on global wealth indexes, Falguni Nayar is widely celebrated in Indian industry circles for her unpretentious, accessible demeanor. Colleague and peer interviews consistently describe an executive deeply engaged in operational granularities—often seen reviewing beauty formulations, packaging ergonomics, or customer review threads personally.
+        </p>
+        <p>
+          She maintains an active presence across premier educational forums, regularly delivering commencement speeches at IIM Ahmedabad, IIM Calcutta, and leading business conventions. Her public discourses consistently emphasize the dignity of labor, financial literacy for women, and the imperative for young professionals to master foundational operational skills before pursuing venture expansion.
+        </p>
+        <p>
+          Her public schedule balances executive governance with philanthropic mentorship, actively supporting educational initiatives that advance STEM and financial education for young Indian women.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section D: Her Leadership Style -->
+<section class="section-padding bg-blush" aria-label="Leadership Style and Principles">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge section-badge-gold">Executive Philosophy</span>
+      <h2>Her Leadership Style &amp; Decision Principles</h2>
+      <p>The strategic leadership pillars that define her management methodology and boardroom decisions.</p>
+    </div>
+
+    <div class="card-grid-3">
+      
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128373;</div>
+        <h3>Obsessive Authenticity</h3>
+        <p>
+          Falguni instituted a zero-tolerance policy for questionable supply lines. By working solely with authorized brand representatives, she ensured that every perfume, serum, and lipstick leaving a Nykaa fulfillment center is 100% genuine.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128202;</div>
+        <h3>Data-Driven Curation</h3>
+        <p>
+          Rather than inundating consumers with millions of indiscriminate listings, she leveraged customer search patterns and regional climate data to curate products that genuinely solve consumer skin and hair challenges.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128065;</div>
+        <h3>Visual &amp; Editorial Excellence</h3>
+        <p>
+          She understood early that beauty is emotive. Nykaa invested heavily in premium visual branding, high-definition swatch imagery, and sophisticated color grading, giving an aspirational aesthetic to digital shopping.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#9881;</div>
+        <h3>Operational Supply-Chain Muscle</h3>
+        <p>
+          Understanding that beauty products require temperature-controlled storage and delicate handling, she oversaw the deployment of specialized fulfillment centers across India, ensuring rapid delivery times.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#129309;</div>
+        <h3>Collaborative Stakeholder Alliances</h3>
+        <p>
+          Falguni approached global luxury conglomerates (such as L'Or&eacute;al, Unilever, and Est&eacute;e Lauder) as long-term brand-building partners rather than mere suppliers, helping them craft tailored Indian marketing narratives.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon-wrapper">&#128161;</div>
+        <h3>Decisive, Calm Temperament</h3>
+        <p>
+          Seasoned by decades of market volatility in investment banking, she maintains a calm, deliberate demeanor during market cycles, avoiding emotional overreactions to short-term competitive pressures.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
